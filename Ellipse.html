@@ -7,7 +7,9 @@
     <title>Geometry</title>
   </head>
   <body>
+    <!-- main content -->
     <div class="d-flex flex-column h-100">
+      <!-- header -->
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
         <div class="container-fluid">
           <img src="#"></img>
@@ -36,21 +38,29 @@
               <form>
                 <h2>Calculate Area and Perimeter</h2>
                 <br/>
-  
+                
+                <!-- input for semi-major axes 1 -->
                 <div class="mb-3 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label"
                       >Semi-major Axes 1</label>
+                    <label for="ellipseAxisOne" class="col-sm-2 col-form-label">Semi-major Axes 1</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="SemiMajorAxes" />
+                      <input type="number" class="form-control" id="ellipseAxisOne" />
                     </div>
-                </div> 
+                </div>
+
+                <!-- input for semi-major axes 1 -->
                 <div class="mb-3 row">
                   <label for="inputPassword" class="col-sm-2 col-form-label"
                     >Semi-major Axes 2</label>
+                  <label for="ellipseAxisTwo" class="col-sm-2 col-form-label">Semi-major Axes 2</label>
                   <div class="col-sm-10">
                     <input type="text" class="form-control" id="SemiMajorAxes" />
+                    <input type="number" class="form-control" id="ellipseAxisTwo" />
                   </div>
-              </div> 
+                </div> 
+
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary" type="button">
                       Calculate
@@ -71,5 +81,6 @@
       </div>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/Ellipse.js"></script>
   </body>
 </html>
