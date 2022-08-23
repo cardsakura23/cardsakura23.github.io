@@ -11,8 +11,7 @@
     <div class="d-flex flex-column h-100">
       <!--Header-->
       <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
-      >
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid">
         <div class="container-fluid">
           <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
         </div>
@@ -21,9 +20,7 @@
       <div class="text-center h-100">
         <div class="row w-100 h-100">
           <!--Left Body Container-->
-          <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
-          >
+          <div class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3">
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
             </p>
@@ -36,15 +33,15 @@
               <a class="nav-link" href="Scalene.html">Scalene</a>
               <a class="nav-link" href="Trapezoid.html">Trapezoid</a>
               <a class="nav-link" href="Circle.html">Circle</a>
-              <a class="nav-link active" aria-current="page" href="Sector.html"
-                >Sector</a
-              >
+              <a class="nav-link active" aria-current="page" href="Sector.html">Sector</a>
               <a class="nav-link" href="Ellipse.html">Ellipse</a>
               <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
             </div>
           </div>
+
           <!--Center & Right Body Container-->
           <div class="col-md-10 h-100 row p-2 m-0">
+            
             <!--Center Body Container-->
             <div class="col-md-6 p-5 pt-5">
               <form class="border bg-dark bg-opacity-10 p-5">
@@ -52,28 +49,30 @@
                 <br />
                 <br />
                 <br />
+                
+                <!-- Input for Degree -->
                 <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Radius</label
-                  >
+                  <label for="sectorDegree" class="col-sm-2 col-form-label">Degree</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="radius" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Angle</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Angle" />
+                    <input type="number" class="form-control" id="sectorDegree" />
                   </div>
                 </div>
 
+                <!-- Input for Radius -->
+                <div class="mb-3 row">
+                  <label for="sectorRadius" class="col-sm-2 col-form-label">Radius</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="sectorRadius"/>
+                  </div>
+                </div>
+
+                <!-- Button for Sector Calculator -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button onclick="sector()" class="btn btn-primary" type="button">
                     Calculate
                   </button>
                 </div>
+
               </form>
             </div>
             <!--Right Body Container-->
