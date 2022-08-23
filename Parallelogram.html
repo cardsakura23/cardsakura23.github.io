@@ -11,8 +11,7 @@
     <div class="d-flex flex-column h-100">
       <!--Header-->
       <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
-      >
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid">
         <div class="container-fluid">
           <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
         </div>
@@ -22,8 +21,7 @@
         <div class="row w-100 h-100">
           <!--Left Body Container-->
           <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
-          >
+            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3">
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
             </p>
@@ -38,12 +36,7 @@
               <a class="nav-link" href="Circle.html">Circle</a>
               <a class="nav-link" href="Sector.html">Sector</a>
               <a class="nav-link" href="Ellipse.html">Ellipse</a>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Parallelogram.html"
-                >Parallelogram</a
-              >
+              <a class="nav-link active" aria-current="page" href="Parallelogram.html">Parallelogram</a>
             </div>
           </div>
           <!--Center & Right Body Container-->
@@ -55,38 +48,40 @@
                 <br />
                 <br />
                 <br />
+
+                <!-- Input for height -->
                 <div class="mb-3 row">
-                  <label for="staticEmail" class="col-sm-2 col-form-label"
-                    >Height</label
-                  >
+                  <label for="parallelogramHeight" class="col-sm-2 col-form-label">Height</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="length" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base1</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base1" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base2</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base2" />
+                    <input type="number" class="form-control" id="parallelogramHeight"/>
                   </div>
                 </div>
 
+                <!-- Input for Base 1 -->
+                <div class="mb-3 row">
+                  <label for="parallelogramBase1" class="col-sm-2 col-form-label">Base 1</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="parallelogramBase1" />
+                  </div>
+                </div>
+
+                <!-- Input for Base 2 -->
+                <div class="mb-3 row">
+                  <label for="parallelogramBase2" class="col-sm-2 col-form-label">Base2</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="parallelogramBase2" />
+                  </div>
+                </div>
+
+                <!-- Button for Parallelogram -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button onclick="Parallelogram()" class="btn btn-primary" type="button">
                     Calculate
                   </button>
                 </div>
               </form>
             </div>
+
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
               <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
@@ -105,5 +100,6 @@
       </footer>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/js/Parallelogram.js"></script>
   </body>
 </html>
