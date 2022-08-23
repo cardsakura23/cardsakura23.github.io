@@ -24,4 +24,6 @@ function ellipse() {
   document.getElementById("resultPerimeter").innerHTML = ellipsePerimeter;
   document.getElementById("ellipseAxisOneValue").innerHTML = ellipseAxis1;
   document.getElementById("ellipseAxisTwoValue").innerHTML = ellipseAxis2;
+  document.getElementById("ellipseAxisOneValue2").innerHTML = ellipseAxis1;
+  document.getElementById("ellipseAxisTwoValue2").innerHTML = ellipseAxis2;
 }
