@@ -51,16 +51,32 @@
             <!--Center Body Container-->
             <div class="col-md-6 p-5 pt-5">
               <form class="border bg-dark bg-opacity-10 p-5">
-                <img src="img/traingle.png" width="100" height="100" />
-                <br />
-                <br />
+                <div class="text-center align-items-center">
+                  <p class="lead text-black-75 d-inline-block">
+                    Triangle: The simplest polygon with three sides.
+                  </p>
+                  <img
+                    src="img/traingle.png"
+                    width="100"
+                    height="100"
+                    class="d-inline-block"
+                  />
+                  <p class="lead text-black-75 d-inline-block fs-6 text-start">
+                    Area: 1/2 x base x height <br />Perimeter: a side + b side +
+                    c side
+                  </p>
+                </div>
                 <br />
                 <div class="mb-3 row">
                   <label for="inputPassword" class="col-sm-2 col-form-label"
                     >Edge1</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="edge" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="edge"
+                    />
                   </div>
                 </div>
                 <div class="mb-3 row">
@@ -68,7 +84,11 @@
                     >Edge2</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="edge" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="edge"
+                    />
                   </div>
                 </div>
                 <div class="mb-3 row">
@@ -76,12 +96,16 @@
                     >Edge3</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="edge" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="edge"
+                    />
                   </div>
                 </div>
 
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button class="btn btn-primary rounded-0" type="button">
                     Calculate
                   </button>
                 </div>

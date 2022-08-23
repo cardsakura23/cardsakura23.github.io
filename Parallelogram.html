@@ -51,16 +51,33 @@
             <!--Center Body Container-->
             <div class="col-md-6 p-5 pt-5">
               <form class="border bg-dark bg-opacity-10 p-5">
-                <img src="img/parallelogram.png" width="100" height="100" />
-                <br />
-                <br />
+                <div class="text-center align-items-center">
+                  <p class="lead text-black-75 d-inline-block">
+                    Parallelogram: A simple quadrilateral with two pairs of
+                    parallel sides.
+                  </p>
+                  <img
+                    src="img/parallelogram.png"
+                    width="100"
+                    height="100"
+                    class="d-inline-block"
+                  />
+                  <p class="lead text-black-75 d-inline-block fs-6 text-start">
+                    Area: base x height <br />Perimeter: 2 x (sum of lengths of
+                    adjacent sides)
+                  </p>
+                </div>
                 <br />
                 <div class="mb-3 row">
                   <label for="staticEmail" class="col-sm-2 col-form-label"
                     >Height</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="length" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="length"
+                    />
                   </div>
                 </div>
                 <div class="mb-3 row">
@@ -68,7 +85,11 @@
                     >Base1</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base1" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="base1"
+                    />
                   </div>
                 </div>
                 <div class="mb-3 row">
@@ -76,12 +97,16 @@
                     >Base2</label
                   >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base2" />
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="base2"
+                    />
                   </div>
                 </div>
 
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button class="btn btn-primary rounded-0" type="button">
                     Calculate
                   </button>
                 </div>
