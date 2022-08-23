@@ -10,30 +10,26 @@
     <!--AllIn Container-->
     <div class="d-flex flex-column h-100">
       <!--Header-->
-      <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
-      >
+      <header class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid">
         <div class="container-fluid">
           <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
         </div>
       </header>
+
       <!--Body Container-->
       <div class="text-center h-100">
         <div class="row w-100 h-100">
           <!--Left Body Container-->
-          <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
-          >
+          <div class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3">
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
             </p>
+
             <div class="ms-3 text-start">
               <p class="lead fs-6">Select shape to calculate</p>
               <a class="nav-link" href="Rectangle.html">Rectangle</a>
               <a class="nav-link" href="Square.html">Square</a>
-              <a class="nav-link active" aria-current="page" href="Rhombus.html"
-                >Rhombus</a
-              >
+              <a class="nav-link active" aria-current="page" href="Rhombus.html">Rhombus</a>
               <a class="nav-link" href="Triangle.html">Triangle</a>
               <a class="nav-link" href="Scalene.html">Scalene</a>
               <a class="nav-link" href="Trapezoid.html">Trapezoid</a>
@@ -52,30 +48,41 @@
                 <br />
                 <br />
                 <br />
+
+                <!-- Input for first diagonal -->
                 <div class="mb-3 row">
-                  <label for="staticEmail" class="col-sm-2 col-form-label"
-                    >Length</label
-                  >
+                  <label for="firstDiagonal" class="col-sm-2 col-form-label">First Diagonal</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="length" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Width</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="width" />
+                    <input type="number" class="form-control" id="firstDiagonal"/>
                   </div>
                 </div>
 
+                <!-- Input for second diagonal -->
+                <div class="mb-3 row">
+                  <label for="secondDiagonal" class="col-sm-2 col-form-label">Second Diagonal</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="secondDiagonal"/>
+                  </div>
+                </div>
+
+                <!-- Input for perimeter of rhombus -->
+                <p class="lead"></p>
+                <div class="mb-3 row">
+                  <label for="side" class="col-sm-2 col-form-label">Side</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="side"/>
+                  </div>
+                </div>
+
+                <!-- Button for rhombus -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button onclick="buttonRhombus()" class="btn btn-primary" type="button">
                     Calculate
                   </button>
                 </div>
               </form>
             </div>
+
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
               <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
@@ -94,5 +101,6 @@
       </footer>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/rhombus.js"></script>
   </body>
 </html>
