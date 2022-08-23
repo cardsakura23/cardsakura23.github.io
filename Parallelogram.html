@@ -68,50 +68,68 @@
                   </p>
                 </div>
                 <br />
+
+                <!-- Input for height -->
                 <div class="mb-3 row">
-                  <label for="staticEmail" class="col-sm-2 col-form-label"
+                  <label
+                    for="parallelogramHeight"
+                    class="col-sm-2 col-form-label"
                     >Height</label
                   >
                   <div class="col-sm-10">
                     <input
-                      type="text"
+                      type="number"
                       class="form-control rounded-0"
-                      id="length"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base1</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="base1"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base2</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="base2"
+                      id="parallelogramHeight"
                     />
                   </div>
                 </div>
 
+                <!-- Input for Base 1 -->
+                <div class="mb-3 row">
+                  <label
+                    for="parallelogramBase1"
+                    class="col-sm-2 col-form-label"
+                    >Base 1</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control rounded-0"
+                      id="parallelogramBase1"
+                    />
+                  </div>
+                </div>
+
+                <!-- Input for Base 2 -->
+                <div class="mb-3 row">
+                  <label
+                    for="parallelogramBase2"
+                    class="col-sm-2 col-form-label"
+                    >Base2</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control rounded-0"
+                      id="parallelogramBase2"
+                    />
+                  </div>
+                </div>
+
+                <!-- Button for Parallelogram -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary rounded-0" type="button">
+                  <button
+                    onclick="Parallelogram()"
+                    class="btn btn-primary rounded-0"
+                    type="button"
+                  >
                     Calculate
                   </button>
                 </div>
               </form>
             </div>
+
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
               <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
@@ -130,5 +148,6 @@
       </footer>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/js/Parallelogram.js"></script>
   </body>
 </html>

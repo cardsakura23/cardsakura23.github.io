@@ -46,6 +46,7 @@
               <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
             </div>
           </div>
+
           <!--Center & Right Body Container-->
           <div class="col-md-10 h-100 row p-2 m-0">
             <!--Center Body Container-->
@@ -67,45 +68,56 @@
                   </p>
                 </div>
                 <br />
+
+                <!-- Input for Side 1 -->
                 <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Edge1</label
+                  <label for="triangleSide1" class="col-sm-2 col-form-label"
+                    >Side 1</label
                   >
                   <div class="col-sm-10">
                     <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="edge"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Edge2</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="edge"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Edge3</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="edge"
+                      type="number"
+                      class="form-control"
+                      id="triangleSide1"
                     />
                   </div>
                 </div>
 
+                <!-- Input for Side 2 -->
+                <div class="mb-3 row">
+                  <label for="triangleSide2" class="col-sm-2 col-form-label"
+                    >Side 2</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="triangleSide2"
+                    />
+                  </div>
+                </div>
+
+                <!-- Input for Side 3 -->
+                <div class="mb-3 row">
+                  <label for="triangleSide3" class="col-sm-2 col-form-label"
+                    >Side 3</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="triangleSide3"
+                    />
+                  </div>
+                </div>
+
+                <!-- Button for triangle -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary rounded-0" type="button">
+                  <button
+                    onclick="Triangle()"
+                    class="btn btn-primary"
+                    type="button"
+                  >
                     Calculate
                   </button>
                 </div>
@@ -129,5 +141,6 @@
       </footer>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/js/Triangle.js"></script>
   </body>
 </html>

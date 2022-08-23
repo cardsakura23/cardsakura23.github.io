@@ -43,6 +43,7 @@
               <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
             </div>
           </div>
+
           <!--Center & Right Body Container-->
           <div class="col-md-10 h-100 row p-2 m-0">
             <!--Center Body Container-->
@@ -65,33 +66,42 @@
                   </p>
                 </div>
                 <br />
+
+                <!-- Input for Degree -->
                 <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Radius</label
+                  <label for="sectorDegree" class="col-sm-2 col-form-label"
+                    >Degree</label
                   >
                   <div class="col-sm-10">
                     <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="radius"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Angle</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="Angle"
+                      type="number"
+                      class="form-control"
+                      id="sectorDegree"
                     />
                   </div>
                 </div>
 
+                <!-- Input for Radius -->
+                <div class="mb-3 row">
+                  <label for="sectorRadius" class="col-sm-2 col-form-label"
+                    >Radius</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="sectorRadius"
+                    />
+                  </div>
+                </div>
+
+                <!-- Button for Sector Calculator -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary rounded-0" type="button">
+                  <button
+                    onclick="sector()"
+                    class="btn btn-primary"
+                    type="button"
+                  >
                     Calculate
                   </button>
                 </div>
