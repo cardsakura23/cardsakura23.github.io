@@ -1,0 +1,152 @@
+.textGradient {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(260deg, #a9eeff, #3bd9d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navhover {
+    background: transparent;
+    color: #20ebeb;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    /* border: 2px solid #3bd9d9; */
+    transform: translate(0);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.navhover::before {
+    content: "";
+    position: absolute;
+    background:#20ebeb;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-14deg);
+    filter: blur(26px);
+}
+
+.navhover:hover::before {
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+
+.bodyGradient {
+    background-color: black;
+    overflow: hidden;
+    transition: 0.6s;
+    transform: translate(0);
+    font-weight: 400;
+}
+
+.bodyGradient .bodyhover:hover {
+    color: #020e26;
+    border-color: #020e26;
+} 
+
+.bodyGradient::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -45px;
+    z-index: -1;
+    background: linear-gradient(to right, #3bd9d9, #36a6bf);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.bodyGradient:hover::before {
+    transform: scale(4.5);
+}
+
+.buttonHover {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    transform: translate(0);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonHover::before {
+    content: "";
+    position: absolute;
+    background:#ffffff;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(24px);
+}
+
+button:hover::before {
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+
+.bodyGradientRed {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: 0.6s;
+    transform: translate(0);
+    font-weight: 400;
+}
+
+.bodyGradientRed {
+    color: #ffffff;
+    border-color: #ffffff;
+} 
+
+.bodyGradientRed::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: -90px;
+    z-index: -1;
+    background: linear-gradient(to right, #ff3f3f, #ff0022b6);
+    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.bodyGradientRed:hover::before {
+    transform: scale(6.5);
+}
+
+.bodyGradientYellow {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: 0.6s;
+    transform: translate(0);
+    font-weight: 400;
+}
+
+.bodyGradientYellow {
+    color: #020e26;
+    border-color: #020e26;
+} 
+
+.bodyGradientYellow::before {
+    content: "";
+    position: absolute;
+    bottom: -75px;
+    right: -90px;
+    z-index: -1;
+    background: linear-gradient(to right, #ffec3f, #fbff00e1);
+    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.bodyGradientYellow:hover::before {
+    transform: scale(6.5);
+}
