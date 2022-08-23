@@ -1,11 +1,11 @@
-function perimPenta(){
+function perimPenta(side){
     var side=parseInt(documentGetElementbyId("side").value);
 
     side=5*side;
     return side;
 }
 
-function areaPenta(){
+function areaPenta(side){
     var side=parseInt(documentGetElementbyId("side").value);
     var area;
     const mul = 1.72047740059;
@@ -14,7 +14,7 @@ function areaPenta(){
     return area;
 }
 
-function areaRhombus(){
+function areaRhombus(p,q){
     var p=parseInt(documentGetElementbyId("firstDiagonal").value);
     var q=parseInt(documentGetElementbyId("secondDiagonal").value);
 
@@ -22,7 +22,7 @@ function areaRhombus(){
     return area;
 }
 
-function perimRhombus(){
+function perimRhombus(a){
     var a=parseInt(documentGetElementbyId("side").value);
     var peri=4*a;
     
