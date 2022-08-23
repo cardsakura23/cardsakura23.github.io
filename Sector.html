@@ -1,3 +1,4 @@
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,40 +38,32 @@
                 <h2>Calculate Area and Perimeter</h2>
                 <br/>
 
+                <!-- Input for radius -->
                 <div class="mb-3 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label"
                       >Radius</label>
+                    <label for="sectorRadius" class="col-sm-2 col-form-label">Radius</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="radius" />
+                      <input type="number" class="form-control" id="sectorRadius" />
                     </div>
-                </div>                
+                </div>
+
+                <!-- Input for degree -->
                 <div class="mb-3 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label"
                       >Angle</label>
+                    <label for="sectorDegree" class="col-sm-2 col-form-label">Degree</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="Angle" />
+                      <input type="number" class="form-control" id="sectorDegree" />
                     </div>
                 </div>     
 
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">
-                      Calculate
-                    </button>
-                  </div>
-              </form>
-            </div>
-            <div class="col-md-6 row">
-              <div class="col-md-12 bg-secondary 
-             bg-opacity-25 mb-2">Result Area Here</div>
-              <div class="col-md-12 bg-opacity-25 bg-secondary">Result Perimeter Here</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-white bg-dark mt-auto text-center p-2">
-        Copyright © 2022 Group 3
+
       </div>
     </div>
     <script src="js/bootstrap.js"></script>
+    <script src="/Sector.js"></script>
   </body>
 </html>
