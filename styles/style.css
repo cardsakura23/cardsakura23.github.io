@@ -7,9 +7,7 @@
 }
 
 .navhover {
-    background: transparent;
     color: #20ebeb;
-
     font-size: 14px;
     text-transform: uppercase;
     /* border: 2px solid #3bd9d9; */
@@ -27,16 +25,16 @@
     bottom: 0;
     left: -32px;
     transform: rotate(-14deg);
-    filter: blur(26px);
+    filter: blur(24px);
 }
 
 .navhover:hover::before {
     left: calc(100% + 32px);
-    transition: 0.75s;
+    transition: 1s;
 }
 
 .bodyGradient {
-    background-color: black;
+    background: linear-gradient(180deg, #2e1f37, #051527);
     overflow: hidden;
     transition: 0.6s;
     transform: translate(0);
@@ -54,7 +52,7 @@
     top: -75px;
     left: -45px;
     z-index: -1;
-    background: linear-gradient(to right, #3bd9d9, #36a6bf);
+    background: linear-gradient(to right, #1693a0, #36a6bf);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -99,7 +97,7 @@ button:hover::before {
     font-weight: 400;
 }
 
-.bodyGradientRed {
+.bodyGradientRed p:hover {
     color: #ffffff;
     border-color: #ffffff;
 } 
@@ -110,15 +108,15 @@ button:hover::before {
     top: -75px;
     right: -90px;
     z-index: -1;
-    background: linear-gradient(to right, #ff3f3f, #ff0022b6);
+    background: linear-gradient(to right, #316c23, #22441f,#0c2412);
     border-radius: 75%;
     width: 200px;
     height: 200px;
-    transition: 0.3s;
+    transition: 0.75s;
 }
 
 .bodyGradientRed:hover::before {
-    transform: scale(6.5);
+    transform: scale(9);
 }
 
 .bodyGradientYellow {
@@ -140,13 +138,13 @@ button:hover::before {
     bottom: -75px;
     right: -90px;
     z-index: -1;
-    background: linear-gradient(to right, #ffec3f, #fbff00e1);
+    background: linear-gradient(to right,  #f85b05, #ef3406,#f40e05);
     border-radius: 75%;
     width: 200px;
     height: 200px;
-    transition: 0.3s;
+    transition: 0.75s;
 }
 
 .bodyGradientYellow:hover::before {
-    transform: scale(6.5);
+    transform: scale(9);
 }
