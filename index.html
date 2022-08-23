@@ -19,10 +19,23 @@
       </nav>
       <div class="text-center h-100">
         <div class="row w-100 h-100">
-          <div class="col-md-3 bg-secondary h-100">test</div>
-          <div class="col-md-9 h-100 row p-2">
-            <div class="col-md-6">
+          <div class="col-md-3 bg-secondary h-100 text-light d-flex flex-column align-items-start justify-content-center p-5">
+            <a class="nav-link" href="rectangle.html">Rectangle</a>
+            <a class="nav-link" href="rectangle.html">Square</a>
+            <a class="nav-link" href="rectangle.html">Rhombus</a>
+            <a class="nav-link" href="rectangle.html">Triangle</a>
+            <a class="nav-link" href="rectangle.html">Scalene</a>
+            <a class="nav-link" href="rectangle.html">Trapezoid</a>
+            <a class="nav-link" href="rectangle.html">Circle</a>
+            <a class="nav-link" href="rectangle.html">Sector</a>
+            <a class="nav-link" href="rectangle.html">Ellipse</a>
+            <a class="nav-link" href="rectangle.html">Parallelogram</a>
+          </div> 
+          <div class="col-md-9 h-100 row p-2 m-0">
+            <div class="col-md-6 p-5">
               <form>
+                <h2>Calculate Area and Perimeter</h2>
+                <br/>
                 <div class="mb-3 row">
                   <label for="staticEmail" class="col-sm-2 col-form-label"
                     >Length</label
@@ -38,17 +51,53 @@
                   <div class="col-sm-10">
                     <input type="text" class="form-control" id="width" />
                   </div>
-                  <div class="d-grid gap-2">
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Edge</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="edge" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Base</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="base" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Radius</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="radius" />
+                    </div>
+                </div>                
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Angle</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="Angle" />
+                    </div>
+                </div>     
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Semi-major Axes</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="SemiMajorAxes" />
+                    </div>
+                </div> 
+                <div class="d-grid gap-2">
                     <button class="btn btn-primary" type="button">
                       Calculate
                     </button>
                   </div>
-                </div>
               </form>
             </div>
             <div class="col-md-6 row">
-              <div class="col-md-12 bg-secondary mb-2">Result Area Here</div>
-              <div class="col-md-12 bg-secondary">Result Area Here</div>
+              <div class="col-md-12 bg-secondary 
+             bg-opacity-25 mb-2">Result Area Here</div>
+              <div class="col-md-12 bg-opacity-25 bg-secondary">Result Perimeter Here</div>
             </div>
           </div>
         </div>
