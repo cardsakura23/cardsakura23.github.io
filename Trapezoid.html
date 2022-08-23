@@ -7,27 +7,23 @@
     <title>Geometry</title>
   </head>
   <body>
-    <!--AllIn Container-->
+    <!--All In Container-->
     <div class="d-flex flex-column h-100">
       <!--Header-->
       <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
-      >
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid">
         <div class="container-fluid">
           <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
         </div>
       </header>
       <!--Body Container-->
+      
       <div class="text-center h-100">
         <!---->
         <div class="row w-100 h-100">
           <!--Left Body Container-->
-          <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
-          >
-            <p class="border border-light border-2 m-3 p-2 fw-bold">
-              CALCULATE AREA & PERIMETER
-            </p>
+          <div class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3">
+            <p class="border border-light border-2 m-3 p-2 fw-bold"> CALCULATE AREA & PERIMETER </p>
             <div class="ms-3 text-start">
               <p class="lead fs-6">Select shape to calculate</p>
               <a class="nav-link" href="rectangle.html">Rectangle</a>
@@ -35,18 +31,14 @@
               <a class="nav-link" href="Rhombus.html">Rhombus</a>
               <a class="nav-link" href="Triangle.html">Triangle</a>
               <a class="nav-link" href="Scalene.html">Scalene</a>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Trapezoid.html"
-                >Trapezoid</a
-              >
+              <a class="nav-link active" aria-current="page" href="Trapezoid.html">Trapezoid</a>
               <a class="nav-link" href="Circle.html">Circle</a>
               <a class="nav-link" href="Sector.html">Sector</a>
               <a class="nav-link" href="Ellipse.html">Ellipse</a>
               <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
             </div>
           </div>
+
           <!--Center & Right Body Container-->
           <div class="col-md-10 h-100 row p-2 m-0">
             <!--Center Body Container-->
@@ -56,33 +48,50 @@
                 <br />
                 <br />
                 <br />
+
+                <!-- Input for Height -->
                 <div class="mb-3 row">
-                  <label for="staticEmail" class="col-sm-2 col-form-label"
-                    >Height</label
-                  >
+                  <label for="trapezoidHeight" class="col-sm-2 col-form-label">Height</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="length" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base1</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base1" />
-                  </div>
-                </div>
-                <div class="mb-3 row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label"
-                    >Base2</label
-                  >
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="base2" />
+                    <input type="number" class="form-control" id="trapezoidHeight"/>
                   </div>
                 </div>
 
+                <!-- Input for Base 1 -->
+                <div class="mb-3 row">
+                  <label for="trapezoidBaseOne" class="col-sm-2 col-form-label">Base 1</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="trapezoidBaseOne" />
+                  </div>
+                </div>
+
+                <!-- Input for Base 2 -->
+                <div class="mb-3 row">
+                  <label for="trapezoidBaseTwo" class="col-sm-2 col-form-label">Base 2</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="trapezoidBaseTwo" />
+                  </div>
+                </div>
+
+                <!-- Input for Side 1 -->
+                <div class="mb-3 row">
+                  <label for="trapezoidSideOne" class="col-sm-2 col-form-label">Side 1</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="trapezoidSideOne" />
+                  </div>
+                </div>
+
+                <!-- Input for Side 2 -->
+                <div class="mb-3 row">
+                  <label for="trapezoidSideTwo" class="col-sm-2 col-form-label">Side 2</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="trapezoidSideTwo" />
+                  </div>
+                </div>
+
+                <!-- Button for trapezoid calculator -->
                 <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="button">
+                  <button onclick="trapezoid()" class="btn btn-primary" type="button">
                     Calculate
                   </button>
                 </div>
