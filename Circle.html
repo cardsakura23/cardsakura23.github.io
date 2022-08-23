@@ -8,54 +8,69 @@
   </head>
   <body>
     <div class="d-flex flex-column h-100">
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
+      <nav
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
+      >
         <div class="container-fluid">
-          <img src="#"></img>
-          <a class="navbar-brand" href="#">Geometry</a>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div></div>
-          </div>
+          <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
         </div>
       </nav>
       <div class="text-center h-100">
+        <!---->
         <div class="row w-100 h-100">
-          <div class="col-md-3 bg-secondary h-100 text-light d-flex flex-column align-items-start justify-content-center p-5">
-            <a class="nav-link" href="rectangle.html">Rectangle</a>
-            <a class="nav-link" href="Square.html">Square</a>
-            <a class="nav-link" href="Rhombus.html">Rhombus</a>
-            <a class="nav-link" href="Triangle.html">Triangle</a>
-            <a class="nav-link" href="Scalene.html">Scalene</a>
-            <a class="nav-link" href="Trapezoid.html">Trapezoid</a>
-            <a class="nav-link active" aria-current="page" href="Circle.html">Circle</a>
-            <a class="nav-link" href="Sector.html">Sector</a>
-            <a class="nav-link" href="Ellipse.html">Ellipse</a>
-            <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
-          </div> 
-          <div class="col-md-9 h-100 row p-2 m-0">
-            <div class="col-md-6 p-5">
-              <form>
-                <h2>Calculate Area and Perimeter</h2>
-                <br/>
+          <div
+            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
+          >
+            <p class="border border-light border-2 m-3 p-2 fw-bold">
+              CALCULATE AREA & PERIMETER
+            </p>
+            <div class="ms-3 text-start">
+              <p class="lead fs-6">Select shape to calculate</p>
+              <a class="nav-link" href="rectangle.html">Rectangle</a>
+              <a class="nav-link" href="Square.html">Square</a>
+              <a class="nav-link" href="Rhombus.html">Rhombus</a>
+              <a class="nav-link" href="Triangle.html">Triangle</a>
+              <a class="nav-link" href="Scalene.html">Scalene</a>
+              <a class="nav-link" href="Trapezoid.html">Trapezoid</a>
+              <a class="nav-link active" aria-current="page" href="Circle.html"
+                >Circle</a
+              >
+              <a class="nav-link" href="Sector.html">Sector</a>
+              <a class="nav-link" href="Ellipse.html">Ellipse</a>
+              <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
+            </div>
+          </div>
 
+          <div class="col-md-10 h-100 row p-2 m-0">
+            <div class="col-md-6 p-5 pt-5">
+              <form class="border bg-dark bg-opacity-10 p-5">
                 <div class="mb-3 row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label"
-                      >Radius</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="radius" />
-                    </div>
-                </div>                
+                  <label for="inputPassword" class="col-sm-2 col-form-label"
+                    >Radius</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="radius"
+                    />
+                  </div>
+                </div>
 
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">
-                      Calculate
-                    </button>
-                  </div>
+                  <button class="btn btn-primary rounded-0" type="button">
+                    Calculate
+                  </button>
+                </div>
               </form>
             </div>
-            <div class="col-md-6 row">
-              <div class="col-md-12 bg-secondary 
-             bg-opacity-25 mb-2">Result Area Here</div>
-              <div class="col-md-12 bg-opacity-25 bg-secondary">Result Perimeter Here</div>
+            <div class="col-md-6 row pt-5">
+              <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
+                Result Area Here
+              </div>
+              <div class="col-md-12 bg-opacity-25 bg-secondary mb-5">
+                Result Perimeter Here
+              </div>
             </div>
           </div>
         </div>
