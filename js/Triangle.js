@@ -9,6 +9,9 @@ function Triangle(){
     var triangleArea = Math.sqrt(halfTrianglePerimeter*(halfTrianglePerimeter-triangleSide1)*(halfTrianglePerimeter-triangleSide2)*(halfTrianglePerimeter-triangleSide3));//Trianlge area formula
     var trianglePerimeter = triangleSide1 + triangleSide2 + triangleSide3; //Triangle Perimeter formula
     console.log(triangleArea, trianglePerimeter);//Triangle outputs
+
+    document.getElementById("triangleArea").innerHTML = triangleArea;
+    document.getElementById("trianglePerimeter").innerHTML = trianglePerimeter;
 }
 
 
