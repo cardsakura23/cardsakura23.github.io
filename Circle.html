@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/style.css"/>
     <title>Geometry</title>
   </head>
   <body>
@@ -11,9 +12,9 @@
     <div class="d-flex flex-column h-100">
       <!--Header-->
       <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid">
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid navhover">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
+          <p class = "navbar-brand m-0">📐<a class="navbar-brand textGradient" href="Circle.html">Geometry</a></p>
         </div>
       </header>
       <!--Body Container-->
@@ -21,11 +22,12 @@
         <div class="row w-100 h-100">
           <!--Left Body Container-->
           <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3">
+            class="col-md-2 bodyGradient text-white h-100 text-light d-flex flex-column align-items-start px-3">
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
             </p>
-            <div class="ms-3 text-start">
+            
+            <div class="ms-3 text-start fw-semibold">
               <p class="lead fs-6">Select shape to calculate</p>
               <a class="nav-link" href="rectangle.html">Rectangle</a>
               <a class="nav-link" href="Square.html">Square</a>
@@ -43,7 +45,7 @@
           <div class="col-md-10 h-100 row p-2 m-0">
             <!--Center Body Container-->
             <div class="col-md-6 p-5 pt-5">
-              <form class="border bg-dark bg-opacity-10 p-5">
+              <form class="bg-white p-5">
                 <div class="text-center align-items-center">
                   <p class="lead text-black-75 d-inline-block">
                     Circle: A circle is a shape consisting of all points in a
@@ -72,7 +74,7 @@
 
                 <!-- Button for radius -->
                 <div class="d-grid gap-2">
-                  <button onclick="Circle()" class="btn btn-primary rounded-0" type="button">
+                  <button onclick="Circle()" class="btn btn-primary buttonHover rounded-0" type="button">
                     Calculate
                   </button>
                 </div>
@@ -81,10 +83,10 @@
 
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
-              <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
+              <div class="col-md-12 mb-5 bodyGradientRed">
                 Result Area Here
               </div>
-              <div class="col-md-12 bg-opacity-25 bg-secondary mb-5">
+              <div class="col-md-12 mb-5 bodyGradientYellow">
                 Result Perimeter Here
               </div>
             </div>
