@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Geometry</title>
   </head>
   <body>
@@ -14,7 +15,11 @@
         class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="Circle.html"> 📐 Geometry</a>
+          <p class="navbar-brand m-0">
+            📐<a class="navbar-brand textGradient" href="Circle.html"
+              >Geometry</a
+            >
+          </p>
         </div>
       </header>
       <!--Body Container-->
@@ -22,7 +27,7 @@
         <div class="row w-100 h-100">
           <!--Left Body Container-->
           <div
-            class="col-md-2 bg-dark bg-opacity-75 text-white h-100 text-light d-flex flex-column align-items-start px-3"
+            class="col-md-2 bodyGradient text-white h-100 text-light d-flex flex-column align-items-start px-3"
           >
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
@@ -99,7 +104,7 @@
                 <div class="d-grid gap-2">
                   <button
                     onclick="sector()"
-                    class="btn btn-primary"
+                    class="btn btn-primary buttonHover rounded-0"
                     type="button"
                   >
                     Calculate
@@ -109,11 +114,15 @@
             </div>
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
-              <div class="col-md-12 bg-secondary bg-opacity-25 mb-5">
-                Result Area Here
+              <div class="col-md-12 mb-5 bodyGradientRed">
+                <p class="mt-5 text-white">
+                  <!-- Result Area Here -->
+                </p>
               </div>
-              <div class="col-md-12 bg-opacity-25 bg-secondary mb-5">
-                Result Perimeter Here
+              <div class="col-md-12 mb-5 bodyGradientYellow">
+                <p class="mt-5 text-white">
+                  <!-- Result Area Here -->
+                </p>
               </div>
             </div>
           </div>
