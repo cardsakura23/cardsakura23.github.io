@@ -1,9 +1,11 @@
 //Get Circle Function
 function Circle() {
-  var circleRadius = parseInt(document.getElementById("circleRadius").value); //Circle Input Radius
-  var circleArea = Math.pi * circleRadius * circleRadius; //Circle Area formula
-  var circlePerimeter = 2 * Math.pi * circleRadius; //Circle Perimeter formula
-  console.log(circleArea, circlePerimeter); //circle output
+  var circleRadius = parseInt(document.getElementById("circleRadius").value);
+  var circleArea = Math.PI * circleRadius * circleRadius;
+  //Circle Input Radius
+  var circlePerimeter = 2 * Math.PI * circleRadius; //Circle Perimeter formula
+  console.log(circleArea);
+  console.log(document.getElementById("circleArea"));
 
   document.getElementById("circleArea").innerHTML = circleArea;
   document.getElementById("circlePerimeter").innerHTML = circlePerimeter;
