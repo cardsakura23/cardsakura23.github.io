@@ -64,24 +64,37 @@
 }
 
 .buttonHover {
-    font-weight: 400;
-    font-size: 16px;
+    display: inline-block;
+    text-align: center;
     text-transform: uppercase;
-    transform: translate(0);
-    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0px 10px 0px;
+    border: 0;
+    border-radius: 64px;
+    color: #ffffff;
+    background-color: #0d6efd;
     cursor: pointer;
+    overflow: hidden;
+    transform: translate(0);
 }
 
 .buttonHover::before {
     content: "";
     position: absolute;
-    background:#ffffff;
-    width: 8px;
+    z-index: -1;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    left: -32px;
-    transform: rotate(-16deg);
-    filter: blur(24px);
+    background: linear-gradient(90deg, #0d6efd, #3bd9df);
+    transition: 1s ease;
+    transform: scaleX(2);
+    transform-origin: 100% 0;
+}
+
+.buttonHover:hover:before {
+    transform: scaleX(1.1) scaleY(1.1);
 }
 
 button:hover::before {
