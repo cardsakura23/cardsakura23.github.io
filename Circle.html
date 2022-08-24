@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Geometry</title>
   </head>
   <body>
@@ -12,9 +12,14 @@
     <div class="d-flex flex-column h-100">
       <!--Header-->
       <header
-        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid navhover">
+        class="navbar navbar-dark bg-dark navbar-expand-lg bg-light bg-dark container-fluid navhover"
+      >
         <div class="container-fluid">
-          <p class = "navbar-brand m-0">📐<a class="navbar-brand textGradient" href="Circle.html">Geometry</a></p>
+          <p class="navbar-brand m-0">
+            📐<a class="navbar-brand textGradient" href="Circle.html"
+              >Geometry</a
+            >
+          </p>
         </div>
       </header>
       <!--Body Container-->
@@ -22,11 +27,12 @@
         <div class="row w-100 h-100">
           <!--Left Body Container-->
           <div
-            class="col-md-2 bodyGradient text-white h-100 text-light d-flex flex-column align-items-start px-3">
+            class="col-md-2 bodyGradient text-white h-100 text-light d-flex flex-column align-items-start px-3"
+          >
             <p class="border border-light border-2 m-3 p-2 fw-bold">
               CALCULATE AREA & PERIMETER
             </p>
-            
+
             <div class="ms-3 text-start fw-semibold">
               <p class="lead fs-6">Select shape to calculate</p>
               <a class="nav-link" href="rectangle.html">Rectangle</a>
@@ -35,7 +41,9 @@
               <a class="nav-link" href="Triangle.html">Triangle</a>
               <a class="nav-link" href="Scalene.html">Scalene</a>
               <a class="nav-link" href="Trapezoid.html">Trapezoid</a>
-              <a class="nav-link active" aria-current="page" href="Circle.html">Circle</a>
+              <a class="nav-link active" aria-current="page" href="Circle.html"
+                >Circle</a
+              >
               <a class="nav-link" href="Sector.html">Sector</a>
               <a class="nav-link" href="Ellipse.html">Ellipse</a>
               <a class="nav-link" href="Parallelogram.html">Parallelogram</a>
@@ -66,15 +74,25 @@
 
                 <!-- Input for radius -->
                 <div class="mb-3 row">
-                  <label for="circleRadius" class="col-sm-2 col-form-label">Radius</label>
+                  <label for="circleRadius" class="col-sm-2 col-form-label"
+                    >Radius</label
+                  >
                   <div class="col-sm-10">
-                    <input type="text" class="form-control rounded-0" id="circleRadius"/>
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="circleRadius"
+                    />
                   </div>
                 </div>
 
                 <!-- Button for radius -->
                 <div class="d-grid gap-2">
-                  <button onclick="Circle()" class="btn btn-primary buttonHover rounded-0" type="button">
+                  <button
+                    onclick="Circle()"
+                    class="btn btn-primary buttonHover rounded-0"
+                    type="button"
+                  >
                     Calculate
                   </button>
                 </div>
@@ -83,17 +101,23 @@
 
             <!--Right Body Container-->
             <div class="col-md-6 row pt-5">
-              <div class="col-md-12 mb-5 bodyGradientRed">
-                Result Area Here
+              <div class="col-md-12 mb-5 bodyGradientRed text-dark">
+                <p class="mt-5">
+                  Area: π× (<span id="radiusArea">radius</span>)²
+                </p>
+                <p class="text-success" id="circleArea"></p>
               </div>
               <div class="col-md-12 mb-5 bodyGradientYellow">
-                Result Perimeter Here
+                <p class="mt-5">
+                  Perimeter: 2π x <span id="radiusPerimeter">radius</span>
+                </p>
+                <p class="text-success" id="circlePerimeter"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <!--Footer-->
       <footer
         class="text-white bg-dark mt-auto text-opacity-50 text-center p-2"
