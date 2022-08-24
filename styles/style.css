@@ -95,69 +95,64 @@
 
 .buttonHover:hover:before {
     transform: scaleX(1.1) scaleY(1.1);
-}
-
-button:hover::before {
     left: calc(100% + 32px);
     transition: 0.75s;
 }
 
 .bodyGradientRed {
-    background-color: #f9f9f9;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px 10px 0px;
+    color: #001233;
+    background-color: #002855;
+    cursor: pointer;
     overflow: hidden;
-    transition: 0.6s;
     transform: translate(0);
-    font-weight: 400;
 }
-
-.bodyGradientRed p:hover {
-    color: #ffffff;
-    border-color: #ffffff;
-} 
 
 .bodyGradientRed::before {
     content: "";
     position: absolute;
-    top: -75px;
-    right: -90px;
     z-index: -1;
-    background: linear-gradient(to right, #316c23, #22441f,#0c2412);
-    border-radius: 75%;
-    width: 200px;
-    height: 200px;
-    transition: 0.75s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,  #002855, #001845, #001233);
+    transition: 0.4s ease;
+    transform: scaleX(2);
+    transform-origin: 100% 0;
 }
 
 .bodyGradientRed:hover::before {
-    transform: scale(9);
+    transform: scaleX(1.1) scaleY(1.1);
 }
 
 .bodyGradientYellow {
-    background-color: #f9f9f9;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px 10px 0px;
+    color: #001233;
+    background-color: #002855;
+    cursor: pointer;
     overflow: hidden;
-    transition: 0.6s;
     transform: translate(0);
-    font-weight: 400;
 }
-
-.bodyGradientYellow {
-    color: #020e26;
-    border-color: #020e26;
-} 
 
 .bodyGradientYellow::before {
     content: "";
     position: absolute;
-    bottom: -75px;
-    right: -90px;
     z-index: -1;
-    background: linear-gradient(to right,  #f85b05, #ef3406,#f40e05);
-    border-radius: 75%;
-    width: 200px;
-    height: 200px;
-    transition: 0.75s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,  #b21e35, #a71e34, #641220);
+    transition: 0.4s ease;
+    transform: scaleX(2);
+    transform-origin: 100% 0;
 }
 
 .bodyGradientYellow:hover::before {
-    transform: scale(9);
+    transform: scaleX(1.1) scaleY(1.1);
 }
